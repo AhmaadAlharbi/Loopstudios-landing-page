@@ -18,7 +18,9 @@
   <body class="">
     <section id="hero">
       <div class="container max-w-6xl w-full mx-auto pt-5 pb-20 px-6">
-        <nav class="flex items-center justify-between max-h-screen py-5">
+        <nav
+          class="relative flex items-center justify-between max-h-screen py-5"
+        >
           <img src="images/logo.svg" alt="" />
           <div
             class="hidden md:flex text-white space-x-5 font-['Alata'] font-bold"
@@ -54,7 +56,7 @@
               ></div>
             </div>
           </div>
-          <div class="flex md:hidden cursor-pointer">
+          <div class="flex md:hidden cursor-pointer" id="menu-icon">
             <img src="images/icon-hamburger.svg" alt="" />
           </div>
         </nav>
@@ -64,6 +66,29 @@
           imppressive<br />
           Experince that Deleiver
         </h1>
+      </div>
+      <!-- mobile nav -->
+      <div
+        class="hidden absolute top-0 right-0 bg-black w-full h-full text-white duration-200"
+        id="mobile-menu"
+      >
+        <div
+          class="flex justify-end mt-16 px-10 cursor-pointer"
+          id="close-icon"
+        >
+          <img src="images/icon-close.svg" alt="" />
+        </div>
+        <div
+          class="flex flex-col space-y-4 text-white mt-16 px-8 font-sans text-xl uppercase"
+        >
+          <a href="" class="hover:text-pink-500">About</a>
+
+          <a href="" class="hover:text-pink-500">Careers</a>
+
+          <a href="" class="hover:text-pink-500">Events</a>
+          <a href="" class="hover:text-pink-500">Products</a>
+          <a href="" class="hover:text-pink-500">Support</a>
+        </div>
       </div>
     </section>
     <!-- Feature Section -->
@@ -335,5 +360,6 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
