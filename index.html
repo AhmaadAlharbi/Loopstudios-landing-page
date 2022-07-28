@@ -4,31 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Loopstudios landing page</title>
   </head>
   <body class="">
     <section id="hero">
-      <div class="container max-w-6xl w-full mx-auto pt-5 pb-20">
+      <div class="container max-w-6xl w-full mx-auto pt-5 pb-20 px-6">
         <nav class="flex items-center justify-between max-h-screen py-5">
           <img src="images/logo.svg" alt="" />
-          <div class="hidden md:flex text-white">
-            <a href="" class="pl-4">Home</a>
-            <a href="" class="pl-4">Careers</a>
-            <a href="" class="pl-4">dw</a>
-            <a href="" class="pl-4">dw</a>
-            <a href="" class="pl-4">qdwqqw</a>
+          <div
+            class="hidden md:flex text-white space-x-5 font-['Alata'] font-bold"
+          >
+            <div class="group">
+              <a href="" class="">Home</a>
+              <div
+                class="mx-4 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="" class="">Careers</a>
+              <div
+                class="mx-4 group-hover:border-b group-hover:border-gray-50"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="" class="">Events</a>
+              <div
+                class="mx-4 group-hover:border-b group-hover:border-gray-50"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="" class="">Products</a>
+              <div
+                class="mx-4 group-hover:border-b group-hover:border-gray-50"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="" class="">Support</a>
+              <div
+                class="mx-4 group-hover:border-b group-hover:border-gray-50"
+              ></div>
+            </div>
           </div>
           <div class="flex md:hidden cursor-pointer">
             <img src="images/icon-hamburger.svg" alt="" />
           </div>
         </nav>
         <h1
-          class="text-3xl mb-32 md:text-5xl text-white border-2 md:max-w-lg md:px-6 py-8 mt-32 uppercase"
+          class="text-4xl mb-32 md:text-6xl text-white border-2 md:max-w-lg py-6 px-4 mt-32 uppercase font-sans"
         >
           imppressive<br />
-          Experince<br />
-          that Deleiver<br />
+          Experince that Deleiver
         </h1>
       </div>
     </section>
@@ -43,7 +77,9 @@
         <div
           class="max-h-full text-center md:absolute md:top-60 md:right-12 py-10 px-5 bg-white"
         >
-          <h2 class="text-3xl py-4 md:text-4xl my-4 uppercase tracking-widest">
+          <h2
+            class="text-3xl py-4 md:text-5xl my-4 uppercase tracking-widest font-light"
+          >
             The leader in<br />
             interactive VR
           </h2>
@@ -65,9 +101,9 @@
         >
           <h2 class="text-3xl md:text-4xl tracking-widest">OUR CREATIONS</h2>
           <button
-            class="hidden md:flex px-12 py-2 border-2 border-black bg-white font-bold uppercase duration-100 hover:bg-black hover:text-white"
+            class="hidden md:flex px-12 py-2 border-2 border-black tracking-widest bg-white font-bold uppercase duration-100 hover:bg-black hover:text-white"
           >
-            show all
+            see all
           </button>
         </div>
 
@@ -265,5 +301,39 @@
         </div>
       </div>
     </section>
+    <!-- footer -->
+    <footer>
+      <div class="bg-black w-full text-white py-16 md:px-40 text-center">
+        <div class="flex flex-col justify-between items-center md:flex-row">
+          <!-- left col -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/logo.svg" alt="" />
+            <div
+              class="md:ml-20 flex flex-col space-y-5 md:block space-x-2 font-alata"
+            >
+              <a href="" class="hover:border-b hover:border-gray-50">Home</a>
+              <a href="" class="hover:border-b hover:border-gray-50">Careers</a>
+              <a href="" class="hover:border-b hover:border-gray-50">Events</a>
+              <a href="" class="hover:border-b hover:border-gray-50"
+                >Products</a
+              >
+              <a href="" class="hover:border-b hover:border-gray-50">Support</a>
+            </div>
+          </div>
+          <!-- right col -->
+          <div>
+            <div
+              class="mt-10 md:mt-0 flex items-center justify-center md:justify-start md:flex-row space-x-5"
+            >
+              <img src="images/icon-facebook.svg" alt="" />
+              <img src="images/icon-twitter.svg" alt="" />
+              <img src="images/icon-pinterest.svg" alt="" />
+              <img src="images/icon-instagram.svg" alt="" />
+            </div>
+            <h6 class="mt-5">© 2022 Loopstudios. All Rights Reserved</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
